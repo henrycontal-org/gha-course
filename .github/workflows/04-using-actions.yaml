@@ -20,3 +20,8 @@ jobs:
         working-directory: 04-using-actions/react-app
         run: |
           npm ci
+
+      - name: Run Tests
+        working-directory: 04-using-actions/react-app
+        run: |
+          npm test
