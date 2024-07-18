@@ -11,5 +11,12 @@ jobs:
         with:
           fetch-depth: 0
       
-      - name: Printing Folders
-        run: ls -la ${{ github.workspace }}/04-using-actions/react-app
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Dependencies
+        working-directory: 04-using-actions/react-app
+        run: |
+          npm ci
