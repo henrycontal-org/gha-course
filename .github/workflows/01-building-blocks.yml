@@ -1,7 +1,5 @@
 name: 01 - Building Blocks
 on: 
-  push:
-    branches: [main]
   workflow_dispatch:
   
 jobs:
@@ -15,8 +13,9 @@ jobs:
     steps:
       - name: Failed step
         run: |
-          echo 'I won't fail'
-          exit 0
+          echo 'I'
+          echo 'Won't'
+          echo 'Fail'
 
       - name: Say goodbye
         run: echo 'Goodbye!'
