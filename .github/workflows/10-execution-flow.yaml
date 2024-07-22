@@ -47,5 +47,5 @@ jobs:
     runs-on: ubuntu-latest
     needs: [e2e-tests, load-tests]
     steps:
-      - name: Running load tests
+      - name: Deploy to prod
         run: echo "Deploy to prod..."
