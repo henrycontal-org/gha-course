@@ -1,1 +1,1 @@
-This is just an example readme
+This is just an example readme.
