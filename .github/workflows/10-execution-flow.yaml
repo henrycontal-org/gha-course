@@ -9,6 +9,7 @@ on:
 
 jobs:
   lint-build:
+    continue-on-error: true
     runs-on: ubuntu-latest
     steps:
       - run: echo "Linting and builiding project"
